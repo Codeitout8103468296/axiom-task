@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==== Pulse theme (Axiom-like dark) ==== */
+
+:root {
+  color-scheme: dark;
+
+  --background: 220 14% 8%;
+  --foreground: 0 0% 98%;
+
+  --card: 220 13% 12%;
+  --card-foreground: 0 0% 98%;
+
+  --muted: 220 10% 16%;
+  --muted-foreground: 215 10% 70%;
+
+  --border: 220 10% 22%;
+  --input: 220 10% 22%;
+  --ring: 220 14% 60%;
+
+  --primary: 210 100% 65%;
+  --primary-foreground: 220 14% 8%;
+
+  --secondary: 220 10% 18%;
+  --secondary-foreground: 0 0% 98%;
+
+  --success: 154 80% 45%;
+  --danger: 0 80% 58%;
+  --warning: 45 90% 55%;
+}
+
+/* base page */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* nice scrollbar (optional) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--border)) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--border));
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
